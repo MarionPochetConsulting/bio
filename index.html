@@ -184,23 +184,15 @@
   }
   .vcard-btn:hover{background:var(--bronze);}
   .bar-actions{display:flex; align-items:center; gap:20px;}
-  .lang-switch{
-    font-family:var(--font-mono);
-    font-size:0.8rem;
-    letter-spacing:0.04em;
-    display:flex;
-    align-items:center;
-    gap:6px;
-  }
-  .lang-switch a{
-    color:var(--slate);
+  .stat .num .lang-link{
+    color:var(--bronze-light);
     text-decoration:none;
-    border-bottom:1px solid transparent;
+    border-bottom:1px dotted var(--bronze-light);
     transition:color .2s ease, border-color .2s ease;
   }
-  .lang-switch a:hover{color:var(--bronze); border-color:var(--bronze);}
-  .lang-switch .current{color:var(--navy); font-weight:600;}
-  .lang-switch .sep{color:var(--hairline);}
+  .stat .num .lang-link:hover{color:#FFFFFF; border-bottom-style:solid; border-color:#FFFFFF;}
+  .stat .num .lang-current{color:#FFFFFF; border-bottom:1px solid var(--bronze-light);}
+  .stat .num .lang-dot{color:var(--slate);}
 
   /* ---------- MAIN CONTENT ---------- */
   main{padding:64px 0 20px;}
@@ -404,7 +396,7 @@
 
       <div class="stat-row">
         <div class="stat"><span class="num" id="yearCounter">0</span><span class="label">Ans d'expérience</span></div>
-        <div class="stat"><span class="num">FR · EN · DE</span><span class="label">Langues</span></div>
+        <div class="stat"><span class="num"><span class="lang-current" aria-current="true">FR</span> <span class="lang-dot">·</span> <a class="lang-link" href="en.html" hreflang="en" title="View in English">EN</a> <span class="lang-dot">·</span> DE</span><span class="label">Langues</span></div>
         <div class="stat"><span class="num">Strasbourg</span><span class="label">Basée en France</span></div>
       </div>
     </div>
@@ -422,9 +414,9 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 2c1 3 3 5 6 6l2-2 5 2v2c0 1-1 2-2 2C10 20 4 14 4 5Z"/></svg>
         +33 6 80 75 11 04
       </a>
-      <a href="mailto:marion.pochet@gmail.com">
+      <a href="mailto:contact@marionpochet.com">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m4 6 8 7 8-7"/></svg>
-        marion.pochet@gmail.com
+        contact@marionpochet.com
       </a>
       <a href="https://www.linkedin.com/in/marionpochet" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17V10M7 7v.01M12 17v-4.5c0-1.5 1-2.5 2.5-2.5S17 11 17 12.5V17"/></svg>
@@ -432,9 +424,6 @@
       </a>
     </div>
     <div class="bar-actions">
-      <div class="lang-switch">
-        <span class="current">FR</span><span class="sep">/</span><a href="en.html">EN</a>
-      </div>
       <button class="vcard-btn" onclick="downloadVCard()">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="15" height="15"><path d="M12 3v13m0 0-4-4m4 4 4-4M5 19h14"/></svg>
         Enregistrer le contact
@@ -592,9 +581,9 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 2c1 3 3 5 6 6l2-2 5 2v2c0 1-1 2-2 2C10 20 4 14 4 5Z"/></svg>
           +33 6 80 75 11 04
         </a>
-        <a href="mailto:marion.pochet@gmail.com">
+        <a href="mailto:contact@marionpochet.com">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m4 6 8 7 8-7"/></svg>
-          marion.pochet@gmail.com
+          contact@marionpochet.com
         </a>
         <a href="https://www.linkedin.com/in/marionpochet" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17V10M7 7v.01M12 17v-4.5c0-1.5 1-2.5 2.5-2.5S17 11 17 12.5V17"/></svg>
@@ -651,7 +640,7 @@
       'FN:Marion Pochet',
       'TITLE:Directrice Financière — Direction Financière Externalisée',
       'TEL;TYPE=CELL:+33680751104',
-      'EMAIL:marion.pochet@gmail.com',
+      'EMAIL:contact@marionpochet.com',
       'URL:https://www.linkedin.com/in/marionpochet',
       'ADR;TYPE=WORK:;;;Strasbourg;;;France',
       'END:VCARD'
