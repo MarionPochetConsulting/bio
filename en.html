@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marion Pochet — CFO | Fractional &amp; Outsourced Finance Leadership</title>
-<meta name="description" content="Marion Pochet — 18 years of finance leadership in international industrial and commercial environments. Fractional &amp; outsourced CFO services.">
+<title>Marion Pochet — Interim &amp; Fractional CFO | Outsourced Finance Leadership</title>
+<meta name="description" content="Marion Pochet — Interim and fractional CFO for large groups, their subsidiaries and mid-caps above €100M revenue in international settings. On site 1 to 3 days a week.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -199,6 +199,93 @@
   .stat .num .lang-current{color:#FFFFFF; border-bottom:1px solid var(--bronze-light);}
   .stat .num .lang-dot{color:var(--slate);}
 
+
+  .hero p.role-sub{max-width:none;}
+  /* ---------- OFFER ---------- */
+  .offer{padding:64px 0 0;}
+  .offer-lead{
+    font-family:var(--font-display);
+    font-weight:500;
+    font-size:clamp(1.3rem, 2.6vw, 1.7rem);
+    line-height:1.25;
+    color:var(--navy);
+    margin:0 0 28px;
+    max-width:40ch;
+  }
+  .offer-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1px;
+    background:var(--hairline);
+    border:1px solid var(--hairline);
+  }
+  .o-card{background:var(--paper); padding:28px 30px 26px;}
+  .o-head{display:flex; align-items:baseline; gap:14px;}
+  .o-num{
+    font-family:var(--font-mono);
+    font-size:0.78rem;
+    letter-spacing:0.08em;
+    color:var(--bronze);
+  }
+  .o-card h3{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:1.3rem;
+    line-height:1.2;
+    color:var(--navy);
+    margin:0;
+  }
+  .o-verb{
+    font-family:var(--font-mono);
+    font-size:0.74rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--slate);
+    margin:8px 0 12px;
+  }
+  .o-when{font-size:0.88rem; color:var(--charcoal); margin:0 0 12px;}
+  .o-when span{
+    font-family:var(--font-mono);
+    font-size:0.7rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--bronze);
+    margin-right:8px;
+  }
+  .o-card ul{margin:0; padding:0; list-style:none;}
+  .o-card li{
+    font-size:0.92rem;
+    padding:5px 0 5px 16px;
+    position:relative;
+    color:var(--charcoal);
+  }
+  .o-card li::before{
+    content:"—";
+    position:absolute;
+    left:0;
+    color:var(--slate);
+  }
+  .offer-terms{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    margin-top:28px;
+    border-top:1px solid var(--hairline);
+    border-bottom:1px solid var(--hairline);
+  }
+  .term{padding:18px 20px;}
+  .term:first-child{padding-left:0;}
+  .term + .term{border-left:1px solid var(--hairline);}
+  .term .k{
+    display:block;
+    font-family:var(--font-mono);
+    font-size:0.72rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--bronze);
+    margin-bottom:6px;
+  }
+  .term .v{font-size:0.9rem; color:var(--charcoal);}
+
   /* ---------- MAIN CONTENT ---------- */
   main{padding:64px 0 20px;}
   .content-grid{
@@ -377,12 +464,23 @@
     .hero-grid{grid-template-columns:1fr; gap:32px;}
     .portrait-frame{justify-self:start; width:180px;}
     .expertise-grid{grid-template-columns:1fr;}
+    .offer-grid{grid-template-columns:1fr;}
+    .offer-terms{grid-template-columns:1fr 1fr;}
+    .term{padding:16px 16px 16px 0;}
+    .term + .term{border-left:none;}
+    .term:nth-child(even){padding-left:16px; border-left:1px solid var(--hairline);}
+    .term:nth-child(n+3){border-top:1px solid var(--hairline);}
   }
   @media (max-width:600px){
     .wrap{padding:0 20px;}
     .hero{padding:52px 0 40px;}
     .contact-bar .wrap{padding:18px 20px; flex-direction:column; align-items:flex-start;}
     main{padding:48px 0 20px;}
+    .offer{padding:48px 0 0;}
+    .o-card{padding:24px 20px 22px;}
+    .offer-terms{grid-template-columns:1fr;}
+    .term, .term:nth-child(even){padding:14px 0; border-left:none;}
+    .term + .term{border-top:1px solid var(--hairline);}
     .stat-row{gap:0;}
     .stat{margin-right:20px; padding-right:20px;}
   }
@@ -395,13 +493,13 @@
     <div>
       <p class="eyebrow">Marion Pochet</p>
       <h1>CFO</h1>
-      <p class="role-sub">Fractional &amp; Outsourced Finance Leadership — <em>DAF externalisée</em></p>
-      <p>With 18 years of experience in finance within international industrial and commercial environments, I support companies in structuring their finance function, driving transformation, and improving financial performance.</p>
-      <p>Fluent in French, English, and German, I combine strategic insight with a hands-on approach to help leadership teams make informed decisions, optimize operations, and achieve sustainable growth.</p>
+      <p class="role-sub">Interim &amp; Fractional — <em>DAF externalisée &amp; de transition</em></p>
+      <p>I support large groups, their subsidiaries and mid-caps with revenue above €100M, in international settings, with senior hands-on support and strategic vision.</p>
+      <p>On site 1 to 3 days a week, I step in for or back up the CFO, lead the finance team and drive the projects that shape the finance function.</p>
 
       <div class="stat-row">
         <div class="stat"><span class="num" id="yearCounter">0</span><span class="label">Years in Finance</span></div>
-        <div class="stat"><span class="num"><a class="lang-link" href="index.html" hreflang="fr" title="Voir en français">FR</a> <span class="lang-dot">·</span> <span class="lang-current" aria-current="true">EN</span> <span class="lang-dot">·</span> DE</span><span class="label">Languages</span></div>
+        <div class="stat"><span class="num"><a class="lang-link" href="index.html" hreflang="fr" title="Voir en français">FR</a> <span class="lang-dot">·</span> <span class="lang-current" aria-current="true">EN</span> <span class="lang-dot">·</span> <a class="lang-link" href="de.html" hreflang="de" title="Auf Deutsch ansehen">DE</a></span><span class="label">Languages</span></div>
         <div class="stat"><span class="num">Strasbourg</span><span class="label">Based in France</span></div>
       </div>
     </div>
@@ -437,6 +535,64 @@
   </div>
 </nav>
 
+<section class="offer" id="offre">
+  <div class="wrap">
+    <p class="section-label reveal">How I can help</p>
+    <p class="offer-lead reveal">Four ways to work together, on their own or combined.</p>
+    <div class="offer-grid reveal">
+        <article class="o-card">
+          <div class="o-head"><span class="o-num">01</span><h3>Interim CFO</h3></div>
+          <p class="o-verb">Step in for the CFO</p>
+          <p class="o-when"><span>When</span>Departure, long absence, recruitment under way.</p>
+          <ul>
+            <li>Closing, group reporting, budget and forecasts</li>
+            <li>Cash and working capital</li>
+            <li>Point of contact for management, group, auditors and banks</li>
+            <li>Structured handover to the incoming CFO</li>
+          </ul>
+        </article>
+        <article class="o-card">
+          <div class="o-head"><span class="o-num">02</span><h3>CFO support</h3></div>
+          <p class="o-verb">Strengthen the CFO in place</p>
+          <p class="o-when"><span>When</span>CFO overloaded, new in the role, or facing a topic outside their scope.</p>
+          <ul>
+            <li>Ownership of a topic or project: forecasts, budget, KPIs, risks &amp; opportunities</li>
+            <li>One-to-one mentoring of the CFO</li>
+            <li>Preparation of discussions with the group</li>
+          </ul>
+        </article>
+        <article class="o-card">
+          <div class="o-head"><span class="o-num">03</span><h3>Fractional Head of Finance</h3></div>
+          <p class="o-verb">Run the finance team day to day</p>
+          <p class="o-when"><span>When</span>Subsidiary or site without a finance lead, team under pressure.</p>
+          <ul>
+            <li>Team coordination and priority setting</li>
+            <li>Link with the group: calendar, reporting, expectations</li>
+            <li>Link with external partners: auditors, accountants, banks, service providers</li>
+            <li>Team upskilling, including on AI</li>
+          </ul>
+        </article>
+        <article class="o-card">
+          <div class="o-head"><span class="o-num">04</span><h3>Transformation projects</h3></div>
+          <p class="o-verb">Structure and modernize finance</p>
+          <p class="o-when"><span>When</span>Processes differ across entities, an ERP or digitalization project starts.</p>
+          <ul>
+            <li>Process harmonization and standardization across entities</li>
+            <li>End-to-end process mapping: purchase-to-pay, order-to-cash, closing</li>
+            <li>ERP rollout support: finance lead between business, IT and integrator</li>
+            <li>BI and AI tools for finance teams</li>
+          </ul>
+        </article>
+    </div>
+    <div class="offer-terms reveal">
+        <div class="term"><span class="k">For whom</span><span class="v">Large groups, subsidiaries and mid-caps above €100M revenue</span></div>
+        <div class="term"><span class="k">Setting</span><span class="v">International: group reporting, multi-country teams</span></div>
+        <div class="term"><span class="k">On site</span><span class="v">1 to 3 days a week</span></div>
+        <div class="term"><span class="k">Engagement</span><span class="v">Direct contract with Marion Pochet Consulting, no intermediary</span></div>
+    </div>
+  </div>
+</section>
+
 <main>
   <div class="wrap content-grid">
 
@@ -455,13 +611,13 @@
         <p class="section-label">Career &amp; Education</p>
         <div class="timeline">
           <div class="t-item">
-            <div class="t-year">2015<br>–2025</div>
+            <div class="t-year">2015<br>–2026</div>
             <div>
               <p class="t-org">adidas</p>
               <ul class="t-roles">
                 <li>Finance Director | Global scope</li>
                 <li>Finance Director | Europe</li>
-                <li>Head of Finance | France</li>
+                <li>Senior Manager, Head of FP&amp;A | France</li>
               </ul>
             </div>
           </div>
@@ -597,7 +753,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>Marion Pochet — Strasbourg, France</span>
+      <span>Marion Pochet Consulting — Strasbourg, France</span>
       <span id="footerYear"></span>
     </div>
   </div>
@@ -646,7 +802,8 @@
       'VERSION:3.0',
       'N:Pochet;Marion;;;',
       'FN:Marion Pochet',
-      'TITLE:CFO — Fractional & Outsourced Finance Leadership',
+      'TITLE:Interim & Fractional CFO — Outsourced Finance Leadership',
+      'ORG:Marion Pochet Consulting',
       'TEL;TYPE=CELL:+33680751104',
       'EMAIL:contact@marionpochet.com',
       'URL:https://www.linkedin.com/in/marionpochet',
